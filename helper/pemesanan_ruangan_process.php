@@ -17,8 +17,9 @@ if(!isset($_SESSION['username'])) {
 
 if(isset($_POST['submit'])) {
     // ambil data dari formulir
-    $jamMulai = date("Y-m-d")." ".$_POST['jamMulai'].":00";
-    $jamSelesai = date("Y-m-d")." ".$_POST['jamSelesai'].":00";
+    $tanggalPemakaian = $_POST['tanggalPemakaian'];
+    $jamMulai = $tanggalPemakaian." ".$_POST['jamMulai'].":00";
+    $jamSelesai = $tanggalPemakaian." ".$_POST['jamSelesai'].":00";
     $username = $_POST['username'];
     $namaRuangan = $_POST['namaRuangan'];
 

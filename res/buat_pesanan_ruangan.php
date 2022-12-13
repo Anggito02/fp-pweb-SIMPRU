@@ -34,6 +34,10 @@ $nama_ruangan = $_GET['ruangan'];
     <h2><?= $nama_ruangan ?></h2>
 
     <form class="my-3 d-flex justify-content-center flex-column" action="../helper/pemesanan_ruangan_process.php" method="POST">
+    <div class="mb-3">
+            <label for="tanggalPemakaian" class="form-label">Tanggal Pemakaian</label>
+            <input type="date" min="<?= date("Y-m-d"); ?>" value="<?= date("Y-m-d"); ?>" class="form-control" id="tanggalPemakaian" name="tanggalPemakaian" aria-describedby="tanggalPemakaianHelp" required>
+        </div>
         <div class="mb-3">
             <label for="jamMulai" class="form-label">Jam Mulai Pemakaian</label>
             <input type="time" min="07:00" max="20:00" value="08:00"class="form-control" id="jamMulai" name="jamMulai" aria-describedby="jamMulaiHelp" required>
