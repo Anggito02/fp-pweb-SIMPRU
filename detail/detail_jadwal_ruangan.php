@@ -101,7 +101,7 @@ $resultListJadwal = mysqli_query($database, $sqlJadwal);
         <tbody>
             <?php while($row = mysqli_fetch_assoc($resultListJadwal)): ?>
                 <tr>
-                    <td><?= $row['tanggal'] ?></td>
+                    <td class="tanggalPemakaian"><?= $row['tanggal'] ?></td>
                     <td><?= $row['waktu_mulai'] ?></td>
                     <td><?= $row['waktu_selesai'] ?></td>
                 </tr>
@@ -119,5 +119,6 @@ $resultListJadwal = mysqli_query($database, $sqlJadwal);
         let currYear = <?= $currYear; ?>;
     </script>
     <script src="../js/dateview.js"></script>
+    <script src="../js/datecolor.js"></script>
 </body>
 </html>
