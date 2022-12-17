@@ -1,3 +1,7 @@
+body {
+    height: auto;
+}
+
 .list_pemesanan {
     width: 70%;
 }
