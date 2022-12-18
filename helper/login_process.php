@@ -38,7 +38,7 @@ if( isset($_POST['submit']) ) {
 
         // jika user, arahkan ke landing page
         else if($tipe_akun == "user") {
-            header("Location: ../res/home.php?login=success");
+            header("Location: ../index.php?login=success");
         }
 
         // jika not defined, kembalikan ke login page => error

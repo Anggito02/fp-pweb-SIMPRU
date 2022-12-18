@@ -56,7 +56,7 @@ if(isset($_POST['submit'])) {
     $resultPesananRuangan = mysqli_query($database, $sqlPesananRuangan);
 
     if($resultPesananRuangan) {
-        header("Location: ../res/home.php?pemesanan=success");
+        header("Location: ../index.php?pemesanan=success");
         exit();
     }
     else {

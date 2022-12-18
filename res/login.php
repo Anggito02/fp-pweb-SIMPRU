@@ -4,7 +4,7 @@ session_start();
 
 // jika sudah punya session, maka autologin
 if( isset($_SESSION['username']) ) {
-    header("Location: ./home.php");
+    header("Location: ../index.php");
 }
 
 ?>

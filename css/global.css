@@ -1,14 +1,70 @@
-body {
-    width: 100vw;
-    height: 100vh;
-    margin-top: 2rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* Color */
+.text-light {
+    color: #F6FFFE !important;
 }
 
-h1 {
-    margin-bottom: 1rem;
+.text-dark {
+    color: #242629 !important;
+}
+
+.bg-whites-main {
+    background-color: #35FFE0 !important;
+}
+
+.bg-whites-secondary {
+    background-color: #32BEA6 !important;
+}
+
+.bg-blacks-main {
+    background-color: #2C3E50 !important;
+}
+
+.bg-blacks-secondary {
+    background-color: #484848 !important;
+}
+
+body {
+    height: 1000px;
+}
+
+#carousel-img {
+    height: 120vh;
+}
+
+#cust-carousel-caption {
+    font-size: 2.5rem;
+
+    background-color: #2C3E50;
+}
+
+.wrapper {
+    width: 25vw;
+}
+
+#img-card {
+    width: 100%;
+    height: 15vw;
+}
+
+@media screen and (max-width: 768px) {    
+    #logo-simpru {
+        width: 126px;
+        height: 32.87px;
+    }
+
+    #carousel-img {
+        height: 60vh;
+    }
+
+    #cust-carousel-caption {
+        font-size: 1.5rem;
+    }
+
+    .wrapper {
+        width: 70vw;
+    }
+
+    #img-card {
+        height: 35vh;
+    }
 }

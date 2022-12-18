@@ -70,7 +70,7 @@ if( isset($_POST['submit']) ) {
 
         if($resultInsert) {
             $_SESSION['username'] = $username;
-            header("Location: ../res/home.php?register=success");
+            header("Location: ../index.php?register=success");
         }
         else {
             header("Location: ../res/register.php?register=failed");
