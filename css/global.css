@@ -68,3 +68,8 @@ body {
         height: 35vh;
     }
 }
+
+/* Modal Backdrop */
+.modal-backdrop {
+    display: none;
+}

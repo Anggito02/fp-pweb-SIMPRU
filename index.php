@@ -20,19 +20,19 @@ session_start();
 
 <body>
     <!-- Info Modal -->
-    <div id="info-modal" class="modal" tabindex="-1">
+    <div id="info-modal" class="modal fade" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                <div class="modal-body d-flex justify-content-between">
+                    <h5 id="modal-body-content" class="modal-title"></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <!-- <div class="modal-body">
                     <p id="modal-body-content"></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -283,6 +283,7 @@ session_start();
         };
 
     function OpenInfoModal() {
+        // Set Modal Info
         let info = "";
         info = 
         <?php if(isset($_GET['logout'])): ?>
@@ -296,12 +297,14 @@ session_start();
             <?php if($_GET['pemesanan'] == 'failed'): ?>
                 "Pemesanan gagal dibuat";
             <?php endif; ?>
+        <?php else: ?>
+            "Selamat Datang!";
         <?php endif ?>
 
         $('#info-modal').modal('show');
         $('#modal-body-content').html(info);
+        $('body').css('overflow-y', 'visible');
     }
     </script>
 </body>
-
 </html>
