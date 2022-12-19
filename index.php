@@ -54,7 +54,7 @@ session_start();
                         <a class="nav-link active" aria-current="page" href="#"><b>Beranda</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/app/html/aboutus.html">Tentang Kami</a>
+                        <a class="nav-link" href="./res/about.php">Tentang Kami</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -298,7 +298,7 @@ session_start();
                 "Pemesanan gagal dibuat";
             <?php endif; ?>
         <?php else: ?>
-            "Selamat Datang!";
+            "Selamat Datang, Silakan Login terlebih dahulu";
         <?php endif ?>
 
         $('#info-modal').modal('show');
