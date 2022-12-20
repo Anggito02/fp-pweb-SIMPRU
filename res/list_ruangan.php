@@ -76,7 +76,7 @@ if(!isset($_SESSION['username'])) {
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="#">Pemesanan Anda</a></li>
-                            <form class="my-3" action="./helper/logout_process.php" method="post">
+                            <form class="my-3" action="../helper/logout_process.php" method="post">
                                 <button type="submit" class="dropdown-item">Keluar</button>
                             </form>
                             <?php else: ?>
