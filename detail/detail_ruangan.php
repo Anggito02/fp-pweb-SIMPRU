@@ -87,7 +87,7 @@ $kuota_ruangan = $row['kuota_ruangan'];
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Pemesanan Anda</a></li>
+                            <li><a class="dropdown-item" href="../res/list_pesanan.php">Pemesanan Anda</a></li>
                             <form class="my-3" action="../helper/logout_process.php" method="post">
                                 <button type="submit" class="dropdown-item">Keluar</button>
                             </form>
