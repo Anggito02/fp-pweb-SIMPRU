@@ -3,3 +3,8 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+img {
+    max-width: 40em;
+    max-height: 40em;
+}

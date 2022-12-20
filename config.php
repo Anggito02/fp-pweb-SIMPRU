@@ -6,8 +6,8 @@ if ( $_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERV
 }
 
 $server = "localhost";
-$user = "root";
-$password = "";
+$user = "simq7123_pweb_simpru";
+$password = "Simpru12345";
 $nama_database = "db_simpru";
 
 $database = mysqli_connect($server, $user, $password, $nama_database);
