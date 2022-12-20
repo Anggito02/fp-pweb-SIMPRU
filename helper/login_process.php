@@ -15,7 +15,7 @@ if( isset($_POST['submit']) ) {
     $password = $_POST['password'];
 
     $sql = "
-        SELECT * FROM Akun
+        SELECT * FROM akun
         WHERE username= BINARY '$username' AND
         password= BINARY '$password';
     ";
