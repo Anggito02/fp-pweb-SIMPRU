@@ -5,7 +5,7 @@ if ( $_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERV
     die();
 }
 
-$server = "localhost:3306";
+$server = "localhost";
 $user = "simq7123_pweb_simpru";
 $password = "Simpru12345";
 $nama_database = "simq7123_db_simpru";

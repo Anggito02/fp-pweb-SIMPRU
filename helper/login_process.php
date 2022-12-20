@@ -16,8 +16,8 @@ if( isset($_POST['submit']) ) {
 
     $sql = "
         SELECT * FROM Akun
-        WHERE username= _utf8 '$username' COLLATE utf8_bin AND
-        password= _utf8 '$password' COLLATE utf8_bin;
+        WHERE username= BINARY '$username' AND
+        password= BINARY '$password';
     ";
     $result = mysqli_query($database, $sql);
     
