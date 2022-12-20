@@ -288,8 +288,6 @@ session_start();
         info = 
         <?php if(isset($_GET['logout'])): ?>
             "Logout Success";
-        <?php elseif(isset($_SESSION['username'])): ?>
-            "Berhasil Login";
         <?php elseif(isset($_GET['pemesanan'])): ?>
             <?php if($_GET['pemesanan'] == 'success'): ?>
                 "Pemesanan berhasil dibuat";
@@ -297,6 +295,8 @@ session_start();
             <?php if($_GET['pemesanan'] == 'failed'): ?>
                 "Pemesanan gagal dibuat";
             <?php endif; ?>
+        <?php elseif(isset($_SESSION['username'])): ?>
+            "Berhasil Login";
         <?php else: ?>
             "Selamat Datang, Silakan Login terlebih dahulu";
         <?php endif ?>
