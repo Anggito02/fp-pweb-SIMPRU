@@ -63,8 +63,6 @@ $resultListJadwal = mysqli_query($database, $sqlJadwal);
     <link rel="stylesheet" href="../css/detail_jadwal_ruangan.css">
 </head>
 <body>
-    <h1>DETAIL JADWAL PAGE</h1>
-
     <h2>JADWAL PEMAKAIAN</h2>
     <h2><?= $nama_ruangan ?></h2>
     <h3 id="table-month"></h3>
