@@ -40,10 +40,10 @@ if(!isset($_SESSION['username'])) {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link">Beranda</a>
+                        <a class="nav-link" href="../index.php">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./res/about.php">Tentang Kami</a>
+                        <a class="nav-link" href="../res/about.php">Tentang Kami</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
@@ -51,8 +51,8 @@ if(!isset($_SESSION['username'])) {
                             <b>Kategori Pemesanan - Ruangan</b>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./res/list_ruangan.php">Ruangan</a></li>
-                            <li><a class="dropdown-item" href="./res/list_kendaraan.php">Kendaraan</a></li>
+                            <li><a class="dropdown-item" href="../res/list_ruangan.php">Ruangan</a></li>
+                            <li><a class="dropdown-item" href="../res/list_kendaraan.php">Kendaraan</a></li>
                         </ul>
                     </li>
                     <li class="nav-item d-md-none">
